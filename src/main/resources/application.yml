@@ -46,6 +46,12 @@ spring:
   application:
     name: API-GATEWAY
 
+#  config:
+#    import: configserver:http://localhost:8085
+
+#  profiles:
+#    active: dev
+
   cloud:
     gateway:
       routes:
@@ -73,3 +79,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+okta:
+  oauth2:
+    issuer: https://dev-om3vpn1d5xgh8cho.us.auth0.com/api/v2/
+    audience: https://dev-om3vpn1d5xgh8cho.us.auth0.com/api/v2/
+    client-id: 1R9PAjgDyao9VcbABMELNUdKK4D1BPDJ
+    client-secret: Tpm2yAYIoBBnKQHs0g2AzguRupvxjPZp5MlumKbVpyaf9le_RE5XMI03PMpdmAYU
+    scopes: openId, profile , email, offline_access
