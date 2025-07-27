@@ -52,7 +52,7 @@ spring:
       password: admin123
 
   config:
-    import: configserver:http://localhost:8085
+    import: "optional:CONFIG-SERVER:http://localhost:8085/"
 #
 #  profiles:
 #    active: dev
@@ -61,17 +61,17 @@ spring:
     gateway:
       routes:
         - id: USER-SERVICE
-          uri: lb://USERSERVICE
+          uri: lb://USER-SERVICE
           predicates:
             - Path=/users/**
 
         - id: HOTEL-SERVICE
-          uri: lb://HOTELSERVICE
+          uri: lb://HOTEL-SERVICE
           predicates:
             - Path=/hotels/**,/staffs/**
 
         - id: RATING-SERVICE
-          uri: lb://RATINGSERVICE
+          uri: lb://RATING-SERVICE
           predicates:
             - Path=/ratings/**
 
