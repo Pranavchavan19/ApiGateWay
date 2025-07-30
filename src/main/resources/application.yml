@@ -82,9 +82,9 @@ spring:
 
 eureka:
   instance:
-    hostname: apigateway-y49m.onrender.com
+    hostname: apigateway-y49m.onrender.com/index.html
     prefer-ip-address: false
-    instance-id: apigateway-y49m.onrender.com
+    instance-id: apigateway-y49m.onrender.com/index.html
     status-page-url: https://apigateway-y49m.onrender.com/actuator/info
     health-check-url: https://apigateway-y49m.onrender.com/actuator/health
   client:
