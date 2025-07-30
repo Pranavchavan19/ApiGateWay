@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>API Gateway Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a9a9a9;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        a {
+            display: block;
+            margin: 10px;
+            font-size: 18px;
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .box {
+            background-color: #eef2f3;
+            padding: 30px;
+            border-radius: 12px;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h1>🚀 API Gateway</h1>
+    <p>Welcome! This is the central entry point for all microservices.</p>
+    <h2>Available Services:</h2>
+    <a href="/user/users">User Service (via Gateway)</a>
+    <a href="/hotel/hotels">Hotel Service (via Gateway)</a>
+    <a href="/rating/ratings">Rating Service (via Gateway)</a>
+
+    <p>Use Postman or Swagger UI in each microservice directly for testing APIs.</p>
+</div>
+</body>
+</html>

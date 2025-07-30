@@ -52,7 +52,7 @@ spring:
       password: admin123
 
   config:
-    import: "optional:CONFIG-SERVER:http://localhost:8085/"
+    import: configserver:https://config-server-microservices-hotel.onrender.com
 #
 #  profiles:
 #    active: dev
@@ -83,5 +83,5 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: https://service-regsistry-microservices-hotel.onrender.com/eureka/
 
