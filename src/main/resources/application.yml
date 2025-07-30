@@ -52,7 +52,7 @@ spring:
       password: admin123
 
   config:
-    import: configserver:https://config-server-microservices-hotel.onrender.com
+    import: optional:configserver:https://config-server-microservices-hotel.onrender.com
 #
 #  profiles:
 #    active: dev
