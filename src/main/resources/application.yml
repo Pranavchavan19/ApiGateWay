@@ -82,11 +82,12 @@ spring:
 
 eureka:
   instance:
-    hostname: apigateway-y49m.onrender.com/index.html
+    hostname: apigateway-y49m.onrender.com
     prefer-ip-address: false
-    instance-id: apigateway-y49m.onrender.com/index.html
+    instance-id: apigateway-y49m.onrender.com
     status-page-url: https://apigateway-y49m.onrender.com/actuator/info
     health-check-url: https://apigateway-y49m.onrender.com/actuator/health
+    home-page-url: https://apigateway-y49m.onrender.com
   client:
     service-url:
       defaultZone: https://service-regsistry-microservices-hotel.onrender.com/eureka/
